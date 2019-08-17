@@ -163,4 +163,32 @@ header .navbar a:hover {
   grid-column-end: 4;
   text-align: center;
 }
+
+.container .content .button-sobre {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3rem;
+  -ms-grid-row: 8;
+      grid-row-start: 8;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  text-align: center;
+  color: #CCC3F9;
+  text-decoration: none;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-size: 300% 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#652fae), color-stop(#434cbb), color-stop(#1560c0), color-stop(#0070be), color-stop(#007db8), color-stop(#0087b8), color-stop(#0d90b6), color-stop(#2b99b3), color-stop(#1da3b5), color-stop(#18acb4), color-stop(#25b5b1), to(#39beab));
+  background-image: linear-gradient(to right, #652fae, #434cbb, #1560c0, #0070be, #007db8, #0087b8, #0d90b6, #2b99b3, #1da3b5, #18acb4, #25b5b1, #39beab);
+  -webkit-box-shadow: 0 0px 0.5px 0 rgba(49, 196, 190, 0.75);
+          box-shadow: 0 0px 0.5px 0 rgba(49, 196, 190, 0.75);
+  line-height: 1.75;
+  border: none;
+  border-radius: 1.5rem;
+}
+
+.container .content .button-sobre:hover {
+  background-position: 50% 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
 /*# sourceMappingURL=styles.css.map */
