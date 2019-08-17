@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Source+Sans+Pro&display=swap')
+
+$lightpurple: #8C84EE
+$lightblue: #CCC3F9
+
+$family-sans-primary: 'Lexend Deca', sans-serif
+$family-sans-secondary: 'Source Sans Pro', sans-serif
+    
+html,
+body 
+    margin: 0
+    padding: 0
+    height: 100%
+    background: linear-gradient(to left bottom, #0c0c34, #17173f, #23214b, #2f2c57, #3b3763)
+    background-attachment: fixed
+
+header
+    display: flex
+    justify-content: space-between
+    padding: 1.5em
+    position: sticky
+    top: 0
+    left: 0
+    font-family: $family-sans-primary
+    a
+        color: $lightpurple
+        text-decoration: none
+        font-size: 1.5rem
+        text-decoration: none
+        &:hover
+                cursor: pointer
+    nav
+        margin-left: 30%
+        display: flex
+        align-self: center
+
+        a
+            margin-left: 25px
+            color: $lightpurple
+            text-decoration: none
+            font-size: 1.2rem
+            border: 2px solid transparent
+            transition: .2s ease-in-out
+            &:hover
+                border-bottom: 2px solid $lightpurple
+
+
+
+.container
+    margin-top: 2.5em
+    display: flex
+    justify-content: space-around
+    padding: 50px
+    .image-container
+        margin-left: 300px
+        img
+            height: 400px
+    .content
+        color: $lightblue
+        display: grid
+        grid-template-columns: 25% 25% 25% 25%
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%
+        grid-gap: 5%
+        h1
+            font-family: $family-sans-primary
+            font-size: 3rem
+            text-align: right
+            grid-column-start: 1
+            grid-column-end: 5
+            grid-row-start: 1
+            grid-row-end: 2
+            span
+                display: block
+                text-align: right
+        .manage
+            grid-row-start: 5
+            grid-column-start: 2
+            grid-column-end: 3
+            margin: 0 auto
+        .manage-content
+            font-family: $family-sans-secondary
+            font-size: 1.3rem
+            grid-row-start: 6
+            grid-column-start: 2
+            grid-column-end: 3
+            text-align: center
+
+        .search
+            grid-row-start: 5
+            grid-column-start: 3
+            grid-column-end: 3
+            margin: 0 auto
+        .search-content
+            font-family: $family-sans-secondary
+            font-size: 1.3rem
+            grid-row-start: 6
+            grid-column-start: 3
+            grid-column-end: 3
+            text-align: center    
+
+        .front
+            grid-row-start: 5
+            grid-column-start: 4
+            grid-column-end: 4
+            margin: 0 auto
+        .front-content
+            font-family: $family-sans-secondary
+            font-size: 1.3rem
+            grid-row-start: 6
+            grid-column-start: 4
+            grid-column-end: 4
+            text-align: center        

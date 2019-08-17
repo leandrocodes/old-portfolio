@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Source+Sans+Pro&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left bottom, from(#0c0c34), color-stop(#17173f), color-stop(#23214b), color-stop(#2f2c57), to(#3b3763));
+  background: linear-gradient(to left bottom, #0c0c34, #17173f, #23214b, #2f2c57, #3b3763);
+  background-attachment: fixed;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+header a {
+  color: #8C84EE;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header a:hover {
+  cursor: pointer;
+}
+
+header nav {
+  margin-left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header nav a {
+  margin-left: 25px;
+  color: #8C84EE;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+header nav a:hover {
+  border-bottom: 2px solid #8C84EE;
+}
+
+.container {
+  margin-top: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+}
+
+.container .image-container {
+  margin-left: 300px;
+}
+
+.container .image-container img {
+  height: 400px;
+}
+
+.container .content {
+  color: #CCC3F9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-gap: 5%;
+}
+
+.container .content h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 3rem;
+  text-align: right;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.container .content h1 span {
+  display: block;
+  text-align: right;
+}
+
+.container .content .manage {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  margin: 0 auto;
+}
+
+.container .content .manage-content {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3rem;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.container .content .search {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  margin: 0 auto;
+}
+
+.container .content .search-content {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3rem;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.container .content .front {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 4;
+  margin: 0 auto;
+}
+
+.container .content .front-content {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.3rem;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 4;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
