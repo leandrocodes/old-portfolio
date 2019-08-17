@@ -35,7 +35,7 @@ header a:hover {
   cursor: pointer;
 }
 
-header nav {
+header .navbar {
   margin-left: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +44,7 @@ header nav {
       align-self: center;
 }
 
-header nav a {
+header .navbar a {
   margin-left: 25px;
   color: #8C84EE;
   text-decoration: none;
@@ -54,7 +54,7 @@ header nav a {
   transition: .2s ease-in-out;
 }
 
-header nav a:hover {
+header .navbar a:hover {
   border-bottom: 2px solid #8C84EE;
 }
 
