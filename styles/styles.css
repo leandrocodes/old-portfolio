@@ -58,6 +58,10 @@ header .navbar a:hover {
   border-bottom: 2px solid #8C84EE;
 }
 
+header .navbar a.active {
+  border-bottom: 2px solid #8C84EE;
+}
+
 .container {
   margin-top: 2.5em;
   display: -webkit-box;
@@ -166,7 +170,7 @@ header .navbar a:hover {
 
 .container .content .button-sobre {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   -ms-grid-row: 8;
       grid-row-start: 8;
   -ms-grid-column: 3;
@@ -181,9 +185,9 @@ header .navbar a:hover {
   background-image: linear-gradient(to right, #652fae, #434cbb, #1560c0, #0070be, #007db8, #0087b8, #0d90b6, #2b99b3, #1da3b5, #18acb4, #25b5b1, #39beab);
   -webkit-box-shadow: 0 0px 0.5px 0 rgba(49, 196, 190, 0.75);
           box-shadow: 0 0px 0.5px 0 rgba(49, 196, 190, 0.75);
-  line-height: 1.75;
+  line-height: 2.05;
   border: none;
-  border-radius: 1.5rem;
+  border-radius: 1.7rem;
 }
 
 .container .content .button-sobre:hover {
