@@ -13,6 +13,7 @@ body
     height: 100%
     background-image: radial-gradient(circle at center, #2d2f7b 0%, #202252 100%)
     background-attachment: fixed
+    scroll-behavior: smooth
 
 header
     display: flex
@@ -44,6 +45,14 @@ header
             &.active
                 border-bottom: 2px solid $lightpurple
 
+.arrow-down
+    font-size: 50px
+    margin: 0 auto
+    a
+        color: $lightblue
+    &:hover
+        padding: 15px
+        transition: .3s all
 
 .container
     margin-top: 2.5em
@@ -124,7 +133,7 @@ header
         .button-sobre
             font-family: $family-sans-primary
             font-size: 1.1rem
-            height: 35px 
+            height: 40px 
             grid-row-start: 8
             grid-column-start: 3
             text-align: center

@@ -6,6 +6,7 @@ body {
   height: 100%;
   background-image: radial-gradient(circle at center, #2d2f7b 0%, #202252 100%);
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -56,6 +57,21 @@ header .navbar a:hover {
 
 header .navbar a.active {
   border-bottom: 2px solid #F2ECFF;
+}
+
+.arrow-down {
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.arrow-down a {
+  color: #F2ECFF;
+}
+
+.arrow-down:hover {
+  padding: 15px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }
 
 .container {
@@ -185,7 +201,7 @@ header .navbar a.active {
 .container .content .button-sobre {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.1rem;
-  height: 35px;
+  height: 40px;
   -ms-grid-row: 8;
       grid-row-start: 8;
   -ms-grid-column: 3;
