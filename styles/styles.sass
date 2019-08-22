@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Source+Sans+Pro&display=swap')
 
-$lightpurple: #8C84EE
-$lightblue: #CCC3F9
+$lightpurple: #F2ECFF
+$lightblue: #F2ECFF
 
 $family-sans-primary: 'Lexend Deca', sans-serif
 $family-sans-secondary: 'Source Sans Pro', sans-serif
@@ -11,22 +11,20 @@ body
     margin: 0
     padding: 0
     height: 100%
-    background: linear-gradient(to left bottom, #0c0c34, #17173f, #23214b, #2f2c57, #3b3763)
+    background-image: radial-gradient(circle at center, #2d2f7b 0%, #202252 100%)
     background-attachment: fixed
 
 header
     display: flex
     justify-content: space-between
     padding: 1.5em
-    position: sticky
-    top: 0
-    left: 0
     font-family: $family-sans-primary
     a
         color: $lightpurple
         text-decoration: none
         font-size: 1.5rem
         text-decoration: none
+        margin-left: 50px
         &:hover
                 cursor: pointer
     .navbar
@@ -52,10 +50,21 @@ header
     display: flex
     justify-content: space-around
     padding: 50px
+    .content-home
+        color: $lightblue
+        text-align: center
+        font-family: $family-sans-primary
+        p
+            font-family: $family-sans-secondary
+            font-size: 1.1rem
+        img
+            height: 200px
+            border-radius: 50%
+            background: linear-gradient(to bottom, #366cdb, #5769d6, #6d66d1, #7e63cb, #8d60c4)
     .image-container
         margin-left: 300px
         img
-            height: 400px
+            width: 500px
     .content
         color: $lightblue
         display: grid
@@ -114,20 +123,30 @@ header
 
         .button-sobre
             font-family: $family-sans-primary
-            font-size: 1.1rem 
+            font-size: 1.1rem
+            height: 35px 
             grid-row-start: 8
             grid-column-start: 3
             text-align: center
-            color: #222
+            color: $lightblue
             text-decoration: none
             transition: all .4s ease-in-out
-            background-size: 600% 100%
-            background-image: linear-gradient(to right, #5cacf9, #64a3f9, #6f9af8, #7d8ff4, #8c84ee)
+            background-size: 200% 100%
+            background-image: linear-gradient(to right, #366cdb, #5769d6, #6d66d1, #7e63cb, #8d60c4)
             box-shadow: 1px 1px .1px 1px rgba(0, 0, 0, 0.1)
             line-height: 2.05
             border: none
             border-radius: 1.7rem
             &:hover
-                background-position: 100% 10%
+                background-position: 100% 0%
                 transition: all .4s ease-in-out
+.text-content
+    text-align: center
+    color: $lightblue
+    font-family: $family-sans-primary
+    img
+        height: 150px
+        background: linear-gradient(to bottom, #5f75b8, #6474b8, #6972b8, #6e71b8, #736fb8)
+        border: none
+        border-radius: 50%
                 
