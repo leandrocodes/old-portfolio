@@ -68,12 +68,6 @@ header .navbar a.active {
   color: #F2ECFF;
 }
 
-.arrow-down:hover {
-  padding: 15px;
-  -webkit-transition: .3s all;
-  transition: .3s all;
-}
-
 .container {
   margin-top: 2.5em;
   display: -webkit-box;
