@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Source+Sans+Pro&display=swap')
 
-$lightpurple: #F2ECFF
-$lightblue: #F2ECFF
-
+$light: #F9FBFF
 $family-sans-primary: 'Lexend Deca', sans-serif
 $family-sans-secondary: 'Source Sans Pro', sans-serif
     
@@ -11,18 +9,21 @@ body
     margin: 0
     padding: 0
     height: 100%
-    background-image: radial-gradient(circle at center, #2d2f7b 0%, #202252 100%)
+    background-image: linear-gradient(to right bottom, #85a0f9, #8b95f1, #918be8, #977fde, #9c74d3)
     background-attachment: fixed
     scroll-behavior: smooth
 
+.grid-container
+
+
 header
     display: flex
+    flex-direction: row
     justify-content: space-between
     padding: 1.5em
     font-family: $family-sans-primary
-
     a
-        color: $lightpurple
+        color: $light
         text-decoration: none
         font-size: 1.5rem
         text-decoration: none
@@ -33,128 +34,22 @@ header
         margin-left: 30%
         display: flex
         align-self: center
-
         a
             margin-left: 25px
-            color: $lightpurple
+            color: $light
             text-decoration: none
-            font-size: 1.2rem
+            font-size: 1rem
             border: 2px solid transparent
             transition: .2s ease-in-out
             &:hover
-                border-bottom: 2px solid $lightpurple
+                border-bottom: 2px solid $light
             &.active
-                border-bottom: 2px solid $lightpurple
+                border-bottom: 2px solid $light
 
 .arrow-down
     font-size: 50px
     margin: 0 auto
     a
-        color: $lightblue
+        color: $light
     &:hover
-
-.container
-    margin-top: 2.5em
-    display: flex
-    justify-content: space-around
-    padding: 50px
-    .content-home
-        color: $lightblue
-        text-align: center
-        font-family: $family-sans-primary
-        p
-            font-family: $family-sans-secondary
-            font-size: 1.1rem
-        img
-            height: 200px
-            border-radius: 50%
-            background: linear-gradient(to bottom, #366cdb, #5769d6, #6d66d1, #7e63cb, #8d60c4)
-    .image-container
-        margin-left: 300px
-        img
-            width: 500px
-    .content
-        color: $lightblue
-        display: grid
-        grid-template-columns: 25% 25% 25% 25%
-        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%
-        grid-gap: 5%
-        h1
-            font-family: $family-sans-primary
-            font-size: 3rem
-            text-align: right
-            grid-column-start: 1
-            grid-column-end: 5
-            grid-row-start: 1
-            grid-row-end: 2
-            span
-                display: block
-                text-align: right
-        .manage
-            grid-row-start: 5
-            grid-column-start: 2
-            grid-column-end: 3
-            margin: 0 auto
-        .manage-content
-            font-family: $family-sans-secondary
-            font-size: 1.3rem
-            grid-row-start: 6
-            grid-column-start: 2
-            grid-column-end: 3
-            text-align: center
-
-        .search
-            grid-row-start: 5
-            grid-column-start: 3
-            grid-column-end: 3
-            margin: 0 auto
-        .search-content
-            font-family: $family-sans-secondary
-            font-size: 1.3rem
-            grid-row-start: 6
-            grid-column-start: 3
-            grid-column-end: 3
-            text-align: center    
-
-        .front
-            grid-row-start: 5
-            grid-column-start: 4
-            grid-column-end: 4
-            margin: 0 auto
-        .front-content
-            font-family: $family-sans-secondary
-            font-size: 1.3rem
-            grid-row-start: 6
-            grid-column-start: 4
-            grid-column-end: 4
-            text-align: center
-
-        .button-sobre
-            font-family: $family-sans-primary
-            font-size: 1.1rem
-            height: 40px 
-            grid-row-start: 8
-            grid-column-start: 3
-            text-align: center
-            color: $lightblue
-            text-decoration: none
-            transition: all .4s ease-in-out
-            background-size: 200% 100%
-            background-image: linear-gradient(to right, #366cdb, #5769d6, #6d66d1, #7e63cb, #8d60c4)
-            box-shadow: 1px 1px .1px 1px rgba(0, 0, 0, 0.1)
-            line-height: 2.05
-            border: none
-            border-radius: 1.7rem
-            &:hover
-                background-position: 100% 0%
-                transition: all .4s ease-in-out
-.text-content
-    text-align: center
-    color: $lightblue
-    font-family: $family-sans-primary
-    img
-        height: 150px
-        background: linear-gradient(to bottom, #5f75b8, #6474b8, #6972b8, #6e71b8, #736fb8)
-        border: none
-        border-radius: 50%
                 
