@@ -10,6 +10,15 @@ body {
   scroll-behavior: smooth;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,8 +30,11 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5em;
   font-family: "Lexend Deca", sans-serif;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  padding-top: 1em;
 }
 
 header a {
@@ -30,7 +42,6 @@ header a {
   text-decoration: none;
   font-size: 1.5rem;
   text-decoration: none;
-  margin-left: 50px;
 }
 
 header a:hover {
