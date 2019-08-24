@@ -6,10 +6,17 @@
           box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
+html {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#6069d7), color-stop(#6877e0), color-stop(#7185e9), color-stop(#7b92f1), to(#85a0f9));
   background-image: linear-gradient(to right bottom, #6069d7, #6877e0, #7185e9, #7b92f1, #85a0f9);
+  background-attachment: fixed;
+}
+
+body {
+  font-family: sans-serif;
+  background: url("../img/curve.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -41,37 +48,63 @@ nav {
   margin-left: auto;
 }
 
-.nav-links li a {
+.nav-links .nav-item {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-left: 15px;
   border-bottom: 2px solid transparent;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.nav-links li a:hover {
+.nav-links .nav-item:hover {
   border-bottom-color: #F9FBFF;
+}
+
+.nav-links .nav-item.active {
+  border-bottom-color: #F9FBFF;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
 }
 
 .landing {
   height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
+  width: 100%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  padding: 100px;
 }
 
 .landing h1 {
-  margin: 100px;
-  font-size: 50px;
-  color: #ae5fce;
+  font-family: "Merriweather", serif;
+  color: #F9FBFF;
+  font-weight: lighter;
+  font-size: 2.5em;
+}
+
+.landing h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #F9FBFF;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.landing img {
+  margin-top: 2em;
+  height: 200px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#85a0f9), color-stop(#889bf5), color-stop(#8b96f1), color-stop(#8e90ed), to(#918be8));
+  background-image: linear-gradient(to bottom, #85a0f9, #889bf5, #8b96f1, #8e90ed, #918be8);
 }
 
 @media screen and (max-width: 850px) {
@@ -131,11 +164,9 @@ nav {
             clip-path: circle(1000px at 90% -30%);
     pointer-events: all;
   }
-  .nav-links li {
+  .nav-links .nav-item {
     margin: 0;
     padding: 0;
-  }
-  .nav-links li a {
     color: #626CD9;
   }
   .landing {

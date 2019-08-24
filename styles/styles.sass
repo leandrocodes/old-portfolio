@@ -8,9 +8,15 @@ $family-serif-secondary: 'Merriweather', serif
   padding: 0
   box-sizing: border-box
 
+html
+    background-image: linear-gradient(to right bottom, #6069d7, #6877e0, #7185e9, #7b92f1, #85a0f9)
+    background-attachment: fixed
+
 body
   font-family: sans-serif
-  background-image: linear-gradient(to right bottom, #6069d7, #6877e0, #7185e9, #7b92f1, #85a0f9)
+  background: url('../img/curve.svg')
+  background-size: cover
+  background-repeat: no-repeat
   background-attachment: fixed
 
 nav
@@ -22,34 +28,55 @@ nav
   padding: 1em 5%
 
 .nav-links
-  display: flex
-  list-style: none
-  width: 50%
-  height: 100%
-  justify-content: space-around
-  align-items: center
-  margin-left: auto
-  li 
-      a
+    display: flex
+    list-style: none
+    width: 50%
+    height: 100%
+    justify-content: space-around
+    align-items: center
+    margin-left: auto 
+    .nav-item
         color: white
         text-decoration: none
-        font-size: 16px
+        font-size: 1.2rem;
         margin-left: 15px
         border-bottom: 2px solid transparent
         transition: all .3s ease
         &:hover
             border-bottom-color: $light
+        &.active
+            border-bottom-color: $light
 
+.grid-container
+    display: grid
+    grid-template-columns: auto auto auto auto
+    grid-template-rows: auto auto auto auto
 
 .landing
   height: 90vh
-  display: flex
-  justify-content: center
-  align-items: center
+  text-align: center
+  width: 100%
+  grid-column-start: 1
+  grid-column-end: 5
+  padding: 100px
+  
   h1
-    margin: 100px
-    font-size: 50px
-    color: #ae5fce
+      font-family: $family-serif-secondary
+      color: $light
+      font-weight: lighter
+      font-size: 2.5em
+  h2
+      font-family: $family-sans-primary
+      color: $light
+      font-weight: lighter
+      font-size: 1.5em      
+  img
+      margin-top: 2em
+      height: 200px
+      border-radius: 50%
+      background-image: linear-gradient(to bottom, #85a0f9, #889bf5, #8b96f1, #8e90ed, #918be8)
+
+
     
 
 @media screen and (max-width: 850px)
@@ -93,11 +120,10 @@ nav
         &.open
             clip-path: circle(1000px at 90% -30%)
             pointer-events: all
-        li
+        .nav-item
             margin: 0
             padding: 0 
-            a 
-                color: #626CD9
+            color: #626CD9
     .landing
         flex-direction: column
     .nav-links li
