@@ -1,0 +1,91 @@
+@charset "utf-8"
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+nav
+    display: flex
+    justify-content: space-around
+    align-items: center
+    min-height: 8vh
+    background-color: #5d4954
+
+.logo
+    color: white
+    text-transform: uppercase
+    font-size: 20px
+
+.nav-links
+    display: flex
+    width: 30%
+    justify-content: space-around
+    li
+        list-style: none
+    a
+        color: white
+        text-decoration: none
+        font-weight: bold
+        font-size: 14px
+.burger
+    display: none
+    div
+        width: 25px
+        height: 2px
+        border: none
+        border-radius: 20%
+        background-color: white
+        margin: 5px
+        transition: .25s ease-in-out
+        transform: rotate(0deg)
+
+@media screen and ( max-width:  1024px)
+    .nav-links
+        width: 50%
+    
+
+@media screen and ( max-width:  768px)
+    html, body
+        overflow-x: hidden
+        overflow-y: scroll !important
+        position: relative
+    .nav-links
+        position: fixed
+        right: 0px
+        height: 92vh
+        top: 8vh
+        background-color: #5d4954
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 50%
+        transform: translateX(100%)
+        transition: transform  0.5s ease
+        border: none
+        li
+            opacity: 0
+            margin: 30px
+    .burger
+        display: block
+        cursor: pointer
+
+    
+    .nav-active
+            transform: translateX(0%)
+    
+    
+@keyframes navLinkFade
+    from
+        opacity: 0
+        transform: translateX(50px)
+    to
+        opacity: 1
+        transform: translateX(0px)
+
+.toggle .line1
+    transform: rotate(45deg) translate(5px, 5px)
+.toggle .line2
+    opacity: 0
+.toggle .line3
+    transform: rotate(-45deg) translate(5px, -5px)
