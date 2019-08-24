@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap');
 
 $light: #F9FBFF
+$dakish: #2D353B
 $family-sans-primary: 'Montserrat', sans-serif
 $family-serif-secondary: 'Merriweather', serif
 *
@@ -59,7 +60,6 @@ nav
   grid-column-start: 1
   grid-column-end: 5
   padding: 100px
-  
   h1
       font-family: $family-serif-secondary
       color: $light
@@ -76,7 +76,42 @@ nav
       border-radius: 50%
       background-image: linear-gradient(to bottom, #85a0f9, #889bf5, #8b96f1, #8e90ed, #918be8)
 
-
+.about
+    height: 90vh
+    text-align: center
+    grid-column-start: 2
+    grid-column-end: 4
+    padding-top: 5em     
+    h3
+        font-family: $family-serif-secondary
+        color: $light   
+        font-weight: lighter
+        font-size: 2em
+    .cards
+        margin-top: 3em
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        .card
+            margin: 0 20px
+            height: 400px
+            width: 400px
+            background: white
+            border-radius: 10px
+            box-shadow: 2px 2px 2px #00000033
+            padding: 50px
+            margin-bottom: 20px
+            .card-title
+                color: $dakish
+                margin-top: 25px
+                font-family: $family-serif-secondary
+                font-size: 1.5rem
+            p   
+                margin-top: 50px
+                text-align: justify
+                font-size: 1.2rem
+                
     
 
 @media screen and (max-width: 850px)

@@ -107,6 +107,62 @@ nav {
   background-image: linear-gradient(to bottom, #85a0f9, #889bf5, #8b96f1, #8e90ed, #918be8);
 }
 
+.about {
+  height: 90vh;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  padding-top: 5em;
+}
+
+.about h3 {
+  font-family: "Merriweather", serif;
+  color: #F9FBFF;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+.about .cards {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .cards .card {
+  margin: 0 20px;
+  height: 400px;
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 2px #00000033;
+          box-shadow: 2px 2px 2px #00000033;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+
+.about .cards .card .card-title {
+  color: #2D353B;
+  margin-top: 25px;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+}
+
+.about .cards .card p {
+  margin-top: 50px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 850px) {
   .line {
     width: 30px;
