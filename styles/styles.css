@@ -87,6 +87,11 @@ nav {
   .navbar.open h1 {
     line-height: 10vh;
   }
+  .navbar.closing {
+    display: block;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
   .hamburger {
     position: absolute;
     cursor: pointer;
@@ -117,11 +122,6 @@ nav {
     padding: 0;
   }
   .nav-links.open {
-    -webkit-clip-path: circle(1000px at 90% -30%);
-            clip-path: circle(1000px at 90% -30%);
-    pointer-events: all;
-  }
-  .nav-links.closing {
     -webkit-clip-path: circle(1000px at 90% -30%);
             clip-path: circle(1000px at 90% -30%);
     pointer-events: all;

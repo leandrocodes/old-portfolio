@@ -59,6 +59,10 @@ nav
             transition: all 1s ease
             h1
                 line-height: 10vh
+        &.closing
+            display: block
+            transition: all 1s ease
+            
     .hamburger
         position: absolute
         cursor: pointer
@@ -81,9 +85,6 @@ nav
         padding: 0
 
         &.open
-            clip-path: circle(1000px at 90% -30%)
-            pointer-events: all
-        &.closing
             clip-path: circle(1000px at 90% -30%)
             pointer-events: all
         li
