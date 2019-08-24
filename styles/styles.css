@@ -46,6 +46,13 @@ nav {
   text-decoration: none;
   font-size: 16px;
   margin-left: 15px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.nav-links li a:hover {
+  border-bottom-color: #F9FBFF;
 }
 
 .landing {

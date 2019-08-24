@@ -29,11 +29,17 @@ nav
   justify-content: space-around
   align-items: center
   margin-left: auto
-  li a
-    color: white
-    text-decoration: none
-    font-size: 16px
-    margin-left: 15px
+  li 
+      a
+        color: white
+        text-decoration: none
+        font-size: 16px
+        margin-left: 15px
+        border-bottom: 2px solid transparent
+        transition: all .3s ease
+        &:hover
+            border-bottom-color: $light
+
 
 .landing
   height: 90vh
