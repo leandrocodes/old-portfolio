@@ -19,8 +19,7 @@ nav
   align-items: center
   font-family: $family-sans-primary
   color: $light
-  grid-column-start: 2
-  grid-column-end: 4
+  padding: 1em 5%
 
 .nav-links
   display: flex
@@ -45,6 +44,7 @@ nav
     margin: 100px
     font-size: 50px
     color: #ae5fce
+    
 
 @media screen and (max-width: 850px)
     .line
@@ -62,7 +62,7 @@ nav
         &.closing
             display: block
             transition: all 1s ease
-            
+
     .hamburger
         position: absolute
         cursor: pointer
@@ -74,8 +74,8 @@ nav
         position: fixed
         border-radius: 5px
         background: #fff
-        height: 85vh
-        width: 90%
+        height: 75vh
+        width: 80%
         left: 50%
         transform: translate(-50%, 0)
         flex-direction: column

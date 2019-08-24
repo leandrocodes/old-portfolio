@@ -23,9 +23,7 @@ nav {
           align-items: center;
   font-family: "Montserrat", sans-serif;
   color: #F9FBFF;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 4;
+  padding: 1em 5%;
 }
 
 .nav-links {
@@ -105,8 +103,8 @@ nav {
     position: fixed;
     border-radius: 5px;
     background: #fff;
-    height: 85vh;
-    width: 90%;
+    height: 75vh;
+    width: 80%;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
