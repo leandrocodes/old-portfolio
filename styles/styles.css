@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +8,24 @@
 
 body {
   font-family: sans-serif;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6069d7), color-stop(#6877e0), color-stop(#7185e9), color-stop(#7b92f1), to(#85a0f9));
+  background-image: linear-gradient(to right bottom, #6069d7, #6877e0, #7185e9, #7b92f1, #85a0f9);
+  background-attachment: fixed;
 }
 
 nav {
   height: 10vh;
-  background: #5b78c7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #F9FBFF;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .nav-links {
@@ -40,6 +47,7 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  margin-left: 15px;
 }
 
 .landing {
@@ -61,7 +69,7 @@ nav {
   color: #ae5fce;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .line {
     width: 30px;
     height: 3px;
@@ -73,6 +81,11 @@ nav {
   }
   .navbar.open {
     display: block;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .navbar.open h1 {
+    line-height: 10vh;
   }
   .hamburger {
     position: absolute;
@@ -85,23 +98,40 @@ nav {
   }
   .nav-links {
     position: fixed;
-    background: #5b78c7;
-    height: 100vh;
-    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+    height: 85vh;
+    width: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -30%);
+            clip-path: circle(100px at 90% -30%);
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     pointer-events: none;
+    padding: 0;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -30%);
+            clip-path: circle(1000px at 90% -30%);
     pointer-events: all;
+  }
+  .nav-links.closing {
+    -webkit-clip-path: circle(1000px at 90% -30%);
+            clip-path: circle(1000px at 90% -30%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li a {
+    color: #626CD9;
   }
   .landing {
     -webkit-box-orient: vertical;
@@ -111,17 +141,29 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+  }
+  .nav-links li a {
     font-size: 25px;
-    -webkit-transition: all 0.5s ease 0.2s;
-    transition: all 0.5s ease 0.2s;
-    -webkit-transition: all 0.5s ease 0.4s;
-    transition: all 0.5s ease 0.4s;
-    -webkit-transition: all 0.5s ease 0.6s;
-    transition: all 0.5s ease 0.6s;
-    -webkit-transition: all 0.5s ease 0.8s;
-    transition: all 0.5s ease 0.8s;
-    -webkit-transition: all 0.5s ease 1s;
-    transition: all 0.5s ease 1s;
+  }
+  .nav-links li:nth-child(1) {
+    -webkit-transition: all 0.3s ease 0.2s;
+    transition: all 0.3s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    -webkit-transition: all 0.3s ease 0.4s;
+    transition: all 0.3s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    -webkit-transition: all 0.3s ease 0.6s;
+    transition: all 0.3s ease 0.6s;
+  }
+  .nav-links li:nth-child(4) {
+    -webkit-transition: all 0.3s ease 0.8s;
+    transition: all 0.3s ease 0.8s;
+  }
+  .nav-links li:nth-child(5) {
+    -webkit-transition: all 0.3s ease 1s;
+    transition: all 0.3s ease 1s;
   }
   li.fade {
     opacity: 1;

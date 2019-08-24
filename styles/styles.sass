@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap');
 
 $light: #F9FBFF
-$family-sans-primary: 'Lexend Deca', sans-serif
-$family-sans-secondary: 'Roboto', sans-serif
+$family-sans-primary: 'Montserrat', sans-serif
+$family-serif-secondary: 'Merriweather', serif
 *
   margin: 0
   padding: 0
@@ -10,12 +10,17 @@ $family-sans-secondary: 'Roboto', sans-serif
 
 body
   font-family: sans-serif
+  background-image: linear-gradient(to right bottom, #6069d7, #6877e0, #7185e9, #7b92f1, #85a0f9)
+  background-attachment: fixed
 
 nav
   height: 10vh
-  background: #5b78c7
   display: flex
   align-items: center
+  font-family: $family-sans-primary
+  color: $light
+  grid-column-start: 2
+  grid-column-end: 4
 
 .nav-links
   display: flex
@@ -29,6 +34,7 @@ nav
     color: white
     text-decoration: none
     font-size: 16px
+    margin-left: 15px
 
 .landing
   height: 90vh
@@ -40,7 +46,7 @@ nav
     font-size: 50px
     color: #ae5fce
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 850px)
     .line
         width: 30px
         height: 3px
@@ -50,7 +56,9 @@ nav
         position: relative
         &.open
             display: block
-
+            transition: all 1s ease
+            h1
+                line-height: 10vh
     .hamburger
         position: absolute
         cursor: pointer
@@ -60,33 +68,44 @@ nav
         z-index: 2
     .nav-links
         position: fixed
-        background: #5b78c7
-        height: 100vh
-        width: 100%
+        border-radius: 5px
+        background: #fff
+        height: 85vh
+        width: 90%
+        left: 50%
+        transform: translate(-50%, 0)
         flex-direction: column
-        clip-path: circle(100px at 90% -10%)
-        -webkit-clip-path: circle(100px at 90% -10%)
+        clip-path: circle(100px at 90% -30%)
         transition: all 1s ease-out
         pointer-events: none
+        padding: 0
+
         &.open
-            clip-path: circle(1000px at 90% -10%)
-            -webkit-clip-path: circle(1000px at 90% -10%)
+            clip-path: circle(1000px at 90% -30%)
             pointer-events: all
+        &.closing
+            clip-path: circle(1000px at 90% -30%)
+            pointer-events: all
+        li
+            margin: 0
+            padding: 0 
+            a 
+                color: #626CD9
     .landing
         flex-direction: column
     .nav-links li
         opacity: 0
         a
-        font-size: 25px
+            font-size: 25px
         &:nth-child(1)
-        transition: all 0.5s ease 0.2s
+            transition: all 0.3s ease 0.2s
         &:nth-child(2)
-        transition: all 0.5s ease 0.4s
+            transition: all 0.3s ease 0.4s
         &:nth-child(3)
-        transition: all 0.5s ease 0.6s
+            transition: all 0.3s ease 0.6s
         &:nth-child(4)
-        transition: all 0.5s ease 0.8s
+            transition: all 0.3s ease 0.8s
         &:nth-child(5)
-        transition: all 0.5s ease 1s
+            transition: all 0.3s ease 1s
     li.fade
         opacity: 1
