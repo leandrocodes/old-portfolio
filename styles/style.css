@@ -39,6 +39,9 @@ nav {
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .logo {
@@ -91,6 +94,15 @@ nav {
   transition: .25s ease-in-out;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.landing {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {

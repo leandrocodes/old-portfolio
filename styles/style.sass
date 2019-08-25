@@ -31,7 +31,9 @@ nav
     justify-content: space-between
     min-height: 8vh
     grid-column-start: 2 
-    grid-column-end: 4 
+    grid-column-end: 4
+    grid-row-start: 1
+    grid-row-end: 1 
 
 .logo
     color: $light
@@ -66,7 +68,11 @@ nav
         margin: 5px
         transition: .25s ease-in-out
         transform: rotate(0deg)
-
+.landing
+    grid-row-start: 2
+    grid-column-start: 2
+    grid-column-end: 4
+    text-align: center
 
 @media screen and ( max-width:  1024px)
     .nav-links
