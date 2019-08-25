@@ -1,32 +1,60 @@
 @charset "utf-8"
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap')
+
+$sans-primary: 'Lato', serif
+$sans-secondary: 'Raleway', serif
+
+$light: #E8F1F2
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
+body
+    background-image: linear-gradient(to right bottom, #1d3557, #273a5f, #314066, #3b456e, #454b75)
+    background-repeat: no-repeat
+    height: 100vh
+    font-family: $sans-secondary
+    
+
+h1, h2, h3, h4, h5, h6
+    font-family: $sans-primary
+
+.container
+    display: grid
+    grid-template-columns: auto auto auto auto
+
 nav
     display: flex
-    justify-content: space-around
     align-items: center
+    justify-content: space-between
     min-height: 8vh
-    background-color: #5d4954
+    grid-column-start: 2 
+    grid-column-end: 4 
 
 .logo
-    color: white
+    color: $light
     text-transform: uppercase
-    font-size: 20px
+    font-size: 1.4rem
+    font-family: $sans-secondary
 
 .nav-links
     display: flex
-    width: 30%
+    width: 40%
     justify-content: space-around
     li
         list-style: none
+        margin-left: 25px
+        padding: 5px
+        border-bottom: 2px solid transparent
+        transition: all .3s ease
+        &:hover
+            border-bottom: 2px solid $light
     a
-        color: white
+        color: $light
         text-decoration: none
-        font-weight: bold
-        font-size: 14px
+        font-size: 1.2rem
 .burger
     display: none
     div
@@ -39,9 +67,10 @@ nav
         transition: .25s ease-in-out
         transform: rotate(0deg)
 
+
 @media screen and ( max-width:  1024px)
     .nav-links
-        width: 50%
+        width: 60%
     
 
 @media screen and ( max-width:  768px)
@@ -51,21 +80,23 @@ nav
         position: relative
     .nav-links
         position: fixed
-        right: 0px
-        height: 92vh
+        right: auto
+        height: 80vh
+        border-radius: 15px
         top: 8vh
-        background-color: #5d4954
+        background-image: linear-gradient(to bottom, #454b75, #4f517c, #5a5684, #655c8b, #706192)
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
-        width: 50%
-        transform: translateX(100%)
+        width: 75%
+        transform: translateX(150%)
         transition: transform  0.5s ease
         border: none
         li
             opacity: 0
-            margin: 30px
+            margin: 1em
+             
     .burger
         display: block
         cursor: pointer
