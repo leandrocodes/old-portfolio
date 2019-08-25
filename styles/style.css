@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap");
+@import url("flexbox-grid/css/flexboxgrid.css");
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +13,11 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   font-family: "Raleway", serif;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", serif;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
 }
 
 nav {
@@ -32,16 +27,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-height: 8vh;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 4;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 1;
 }
 
 .logo {
@@ -73,6 +61,10 @@ nav {
   border-bottom: 2px solid #E8F1F2;
 }
 
+.nav-links li.active {
+  border-bottom: 2px solid #E8F1F2;
+}
+
 .nav-links a {
   color: #E8F1F2;
   text-decoration: none;
@@ -97,12 +89,11 @@ nav {
 }
 
 .landing {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 4;
-  text-align: center;
+  color: #E8F1F2;
+}
+
+.landing h3 {
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -118,9 +109,12 @@ nav {
     position: relative;
   }
   .nav-links {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
     position: fixed;
     right: auto;
-    height: 80vh;
+    height: 50vh;
     border-radius: 15px;
     top: 8vh;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#454b75), color-stop(#4f517c), color-stop(#5a5684), color-stop(#655c8b), to(#706192));

@@ -1,5 +1,6 @@
 @charset "utf-8"
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap')
+@import url('flexbox-grid/css/flexboxgrid.css')
 
 $sans-primary: 'Lato', serif
 $sans-secondary: 'Raleway', serif
@@ -16,24 +17,18 @@ body
     background-repeat: no-repeat
     height: 100vh
     font-family: $sans-secondary
+    overflow: hidden
     
 
 h1, h2, h3, h4, h5, h6
     font-family: $sans-primary
 
-.container
-    display: grid
-    grid-template-columns: auto auto auto auto
 
 nav
     display: flex
     align-items: center
-    justify-content: space-between
+    justify-content: space-around
     min-height: 8vh
-    grid-column-start: 2 
-    grid-column-end: 4
-    grid-row-start: 1
-    grid-row-end: 1 
 
 .logo
     color: $light
@@ -53,6 +48,8 @@ nav
         transition: all .3s ease
         &:hover
             border-bottom: 2px solid $light
+        &.active
+            border-bottom: 2px solid $light
     a
         color: $light
         text-decoration: none
@@ -69,11 +66,9 @@ nav
         transition: .25s ease-in-out
         transform: rotate(0deg)
 .landing
-    grid-row-start: 2
-    grid-column-start: 2
-    grid-column-end: 4
-    text-align: center
-
+    color: $light
+    h3
+        margin-top: 1em              
 @media screen and ( max-width:  1024px)
     .nav-links
         width: 60%
@@ -85,9 +80,11 @@ nav
         overflow-y: scroll !important
         position: relative
     .nav-links
+        grid-column-start: 1
+        grid-column-end: 5
         position: fixed
         right: auto
-        height: 80vh
+        height: 50vh
         border-radius: 15px
         top: 8vh
         background-image: linear-gradient(to bottom, #454b75, #4f517c, #5a5684, #655c8b, #706192)
@@ -126,3 +123,5 @@ nav
     opacity: 0
 .toggle .line3
     transform: rotate(-45deg) translate(5px, -5px)
+
+    
