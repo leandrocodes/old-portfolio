@@ -11,6 +11,13 @@ $light: #E8F1F2
     padding: 0
     box-sizing: border-box
 
+body
+    font-family: $sans-secondary
+    overflow: hidden
+    
+h1, h2, h3, h4, h5, h6
+    font-family: $sans-primary
+
 header
     margin-top: 0
     background-image: url('../img/header.svg')
@@ -19,24 +26,28 @@ header
     background-attachment: fixed
     background-repeat: no-repeat
     background-position: center -50px
-body
-    font-family: $sans-secondary
-    overflow: hidden
-    
-h1, h2, h3, h4, h5, h6
-    font-family: $sans-primary
-
+    padding: 1em
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-template-rows: 8vh auto auto
 nav
     display: flex
     align-items: center
     justify-content: space-around
     min-height: 8vh
+    grid-column-start: 1
+    grid-column-end: 4
+    grid-row-start: 1
+    grid-row-end: 1
 
 .logo
     color: $light
-    text-transform: uppercase
     font-size: 1.4rem
     font-family: $sans-secondary
+    font-weight: lighter
+    h4
+        span
+            float: right
 
 .nav-links
     display: flex
@@ -69,8 +80,25 @@ nav
         transform: rotate(0deg)
 .landing
     color: $light
-    h3
-        margin-top: 1em              
+    grid-column-start: 1
+    grid-column-end: 3
+    grid-row-start: 2
+    grid-row-end: 2
+    padding: 15% 25%
+    display: grid
+    grid-template-columns: auto auto
+    grid-template-rows: 40% auto
+    h1
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 1
+    p
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 2
+
 @media screen and ( max-width:  1024px)
     .nav-links
         width: 60%
@@ -82,13 +110,13 @@ nav
         overflow-y: scroll !important
         position: relative
     .nav-links
-        grid-column-start: 1
+        grid-column-start: 2
         grid-column-end: 5
         position: fixed
-        right: auto
-        height: 50vh
+        margin: 0 auto
+        height: 60vh
         border-radius: 15px
-        top: 8vh
+        top: 20vh
         background-image: linear-gradient(to bottom, #454b75, #4f517c, #5a5684, #655c8b, #706192)
         display: flex
         flex-direction: column
@@ -109,7 +137,13 @@ nav
     
     .nav-active
             transform: translateX(0%)
-        
+@media screen and ( max-width:  425px)
+    .landing
+        display: block
+        text-align: left
+        padding: 25% 5%
+        p
+            margin-top: 15%    
 @keyframes navLinkFade
     from
         opacity: 0
