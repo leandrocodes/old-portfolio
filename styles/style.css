@@ -123,8 +123,8 @@ nav {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  -ms-grid-rows: 35% auto;
-      grid-template-rows: 35% auto;
+  -ms-grid-rows: 35% auto auto;
+      grid-template-rows: 35% auto auto;
 }
 
 .landing h1 {
@@ -143,6 +143,21 @@ nav {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 2;
+}
+
+.landing .media-links {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  font-size: 2em;
+}
+
+.landing .media-links a {
+  text-decoration: none;
+  color: #82AAFF;
 }
 
 @media screen and (max-width: 1024px) {

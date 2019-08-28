@@ -5,6 +5,7 @@ $sans-primary: 'Lato', serif
 $sans-secondary: 'Raleway', serif
 
 $light: #E8F1F2
+$deepblue: #82AAFF
 
 *
     margin: 0
@@ -87,7 +88,7 @@ nav
     padding: 10% 25%
     display: grid
     grid-template-columns: auto auto
-    grid-template-rows: 35% auto
+    grid-template-rows: 35% auto auto
     h1
         grid-column-start: 1
         grid-column-end: 2
@@ -98,6 +99,16 @@ nav
         grid-column-end: 2
         grid-row-start: 2
         grid-row-end: 2
+
+    .media-links
+        grid-column-start: 1
+        grid-column-end: 1
+        grid-row-start: 3
+        grid-row-end: 3
+        font-size: 2em
+        a
+            text-decoration: none
+            color: $deepblue
 
 @media screen and ( max-width:  1024px)
     .nav-links
