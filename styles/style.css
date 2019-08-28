@@ -118,13 +118,13 @@ nav {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 2;
-  padding: 15% 25%;
+  padding: 10% 25%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  -ms-grid-rows: 40% auto;
-      grid-template-rows: 40% auto;
+  -ms-grid-rows: 35% auto;
+      grid-template-rows: 35% auto;
 }
 
 .landing h1 {
