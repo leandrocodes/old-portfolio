@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  -ms-grid-rows: 100vh 50vh 150vh 100vh;
-      grid-template-rows: 100vh 50vh 150vh 100vh;
+  -ms-grid-rows: 100vh 100vh 100vh 150vh 100vh;
+      grid-template-rows: 100vh 100vh 100vh 150vh 100vh;
 }
 
 header {
@@ -149,15 +149,17 @@ nav {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 1;
+  font-size: 2.5em;
 }
 
 .landing p {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 1;
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 2;
+  font-size: 1.2em;
 }
 
 .landing .media-links {
@@ -200,7 +202,7 @@ nav {
 }
 
 .work .work-title h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .work .work-title p {
@@ -210,7 +212,6 @@ nav {
 }
 
 .work .boxes {
-  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,7 +221,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6em;
+  padding: 2em;
 }
 
 .work .boxes .box {
@@ -267,6 +268,21 @@ nav {
 
 .work .boxes .box:nth-of-type(3) h3 {
   text-align: right;
+}
+
+.habilities {
+  color: #FFF;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#82aaff), color-stop(#8f98e7), color-stop(#9588ce), color-stop(#9678b5), to(#926a9c));
+  background-image: linear-gradient(to right bottom, #82aaff, #8f98e7, #9588ce, #9678b5, #926a9c);
 }
 
 @media screen and (max-width: 1024px) {

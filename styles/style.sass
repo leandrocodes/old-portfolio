@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6
 .container
     display: grid
     grid-template-columns: auto auto auto auto
-    grid-template-rows: 100vh 50vh 150vh 100vh
+    grid-template-rows: 100vh 100vh 100vh 150vh 100vh
 
 header
     grid-column-start: 1
@@ -105,11 +105,13 @@ nav
         grid-column-end: 2
         grid-row-start: 1
         grid-row-end: 1
+        font-size: 2.5em
     p
         grid-column-start: 1
-        grid-column-end: 2
+        grid-column-end: 1
         grid-row-start: 2
         grid-row-end: 2
+        font-size: 1.2em
 
     .media-links
         grid-column-start: 1
@@ -133,17 +135,16 @@ nav
         justify-self: center
         width: 100%
         h1
-            font-size: 2rem
+            font-size: 2.25rem
         p
             margin: 1em auto
             color: $light-grey
             width: 30%
     .boxes
-        margin-top: 1em
         display: flex
         justify-content: center
         align-items: center
-        padding: 6em
+        padding: 2em
         .box
             margin: 2em
             display: flex
@@ -173,9 +174,14 @@ nav
                     margin-left: auto
                 h3
                     text-align: right
-            
-
-
+.habilities
+    color: $light
+    grid-column-start: 1
+    grid-column-end: 5
+    grid-row-start: 3
+    grid-row-end: 3
+    display: flex
+    background-image: linear-gradient(to right bottom, #82aaff, #8f98e7, #9588ce, #9678b5, #926a9c)
 @media screen and ( max-width:  1024px)
     .nav-links
         width: 60%
