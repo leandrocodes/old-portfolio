@@ -1,14 +1,15 @@
 @charset "utf-8"
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap')
 
-$sans-primary: 'Lato', serif
-$sans-secondary: 'Raleway', serif
+$sans-primary: 'Lato', sans-serif
+$sans-secondary: 'Raleway', sans-serif
 
 $light: #FFF
 $dark: #444
 $light-grey: #666
 $deepblue: #82AAFF
 $blueish: #7196CF
+$bluegrey: #676E95
 
 *
     margin: 0
@@ -136,7 +137,7 @@ nav
         justify-self: center
         width: 100%
         h1
-            font-size: 2.25rem
+            font-size: 2.25rem02071902400832778
         p
             margin: 1em auto
             color: $light-grey
@@ -214,6 +215,56 @@ nav
             h4
                 margin: .75em 0
                 color: $blueish
+
+.projects
+    color: $dark
+    grid-column-start: 1
+    grid-column-end: 5
+    grid-row-start: 4
+    grid-row-end: 4
+    display: flex
+    flex-direction: column
+    padding: 3em 2em
+    .projects-title
+        text-align: center
+        justify-self: center
+        width: 100%
+        h1
+            font-size: 2.25rem
+        p
+            margin: 1em auto
+            width: 30%
+    .cards
+        display: flex
+        justify-content: center
+        color: $light
+        .card
+            width: 350px
+            height: 450px
+            background-image: linear-gradient(to top left, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95)
+            margin: 30px
+            border-radius: 15px
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2)
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            padding: 2em
+            img
+                margin: 2em auto
+            p
+                text-align: justify
+                margin-bottom: 1em
+            a
+                background-color: $bluegrey
+                color: $light
+                text-decoration: none
+                width: 120px
+                height: 40px
+                text-align: center
+                line-height: 250%
+                border-radius: 25px
+                box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2)
 
 
 @media screen and ( max-width:  1024px)

@@ -7,12 +7,12 @@
 }
 
 body {
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", serif;
+  font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -67,7 +67,7 @@ nav {
 .logo {
   color: #FFF;
   font-size: 1.4rem;
-  font-family: "Raleway", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: lighter;
 }
 
@@ -202,7 +202,7 @@ nav {
 }
 
 .work .work-title h1 {
-  font-size: 2.25rem;
+  font-size: 2.25rem02071902400832778;
 }
 
 .work .work-title p {
@@ -346,6 +346,97 @@ nav {
 .skills .cards .card h4 {
   margin: .75em 0;
   color: #7196CF;
+}
+
+.projects {
+  color: #444;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em 2em;
+}
+
+.projects .projects-title {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+}
+
+.projects .projects-title h1 {
+  font-size: 2.25rem;
+}
+
+.projects .projects-title p {
+  margin: 1em auto;
+  width: 30%;
+}
+
+.projects .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+}
+
+.projects .cards .card {
+  width: 350px;
+  height: 450px;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#6cb8fb), color-stop(#71a4e1), color-stop(#7191c8), color-stop(#6d7fae), to(#676e95));
+  background-image: linear-gradient(to top left, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95);
+  margin: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+}
+
+.projects .cards .card img {
+  margin: 2em auto;
+}
+
+.projects .cards .card p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.projects .cards .card a {
+  background-color: #676E95;
+  color: #FFF;
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 250%;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
 }
 
 @media screen and (max-width: 1024px) {
