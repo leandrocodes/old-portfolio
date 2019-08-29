@@ -4,7 +4,9 @@
 $sans-primary: 'Lato', serif
 $sans-secondary: 'Raleway', serif
 
-$light: #E8F1F2
+$light: #FFF
+$dark: #444
+$light-grey: #666
 $deepblue: #82AAFF
 
 *
@@ -14,7 +16,7 @@ $deepblue: #82AAFF
 
 body
     font-family: $sans-secondary
-    overflow: hidden
+    overflow-x: hidden
     
 h1, h2, h3, h4, h5, h6
     font-family: $sans-primary
@@ -33,7 +35,6 @@ header
     background-image: url('../img/header.svg')
     height: 100vh
     background-size: cover
-    background-attachment: fixed
     background-repeat: no-repeat
     background-position: center -50px
     padding: 1em
@@ -88,6 +89,7 @@ nav
         margin: 5px
         transition: .25s ease-in-out
         transform: rotate(0deg)
+
 .landing
     color: $light
     grid-column-start: 1
@@ -118,6 +120,26 @@ nav
         a
             text-decoration: none
             color: $deepblue
+.work
+    color: $dark
+    grid-column-start: 1
+    grid-column-end: 5
+    grid-row-start: 2
+    grid-row-end: 2
+    display: flex
+    flex-direction: column
+    .work-title
+        text-align: center
+        justify-self: center
+        width: 100%
+        p
+            margin: 1em auto
+            color: $light-grey
+            width: 30%
+    .boxes
+        margin-top: 5em
+        display: flex
+
 
 @media screen and ( max-width:  1024px)
     .nav-links

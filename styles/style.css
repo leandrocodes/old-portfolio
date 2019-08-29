@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,7 +35,6 @@ header {
   background-image: url("../img/header.svg");
   height: 100vh;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center -50px;
   padding: 1em;
@@ -66,7 +65,7 @@ nav {
 }
 
 .logo {
-  color: #E8F1F2;
+  color: #FFF;
   font-size: 1.4rem;
   font-family: "Raleway", serif;
   font-weight: lighter;
@@ -96,15 +95,15 @@ nav {
 }
 
 .nav-links li:hover {
-  border-bottom: 2px solid #E8F1F2;
+  border-bottom: 2px solid #FFF;
 }
 
 .nav-links li.active {
-  border-bottom: 2px solid #E8F1F2;
+  border-bottom: 2px solid #FFF;
 }
 
 .nav-links a {
-  color: #E8F1F2;
+  color: #FFF;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -127,7 +126,7 @@ nav {
 }
 
 .landing {
-  color: #E8F1F2;
+  color: #FFF;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
@@ -174,6 +173,43 @@ nav {
 .landing .media-links a {
   text-decoration: none;
   color: #82AAFF;
+}
+
+.work {
+  color: #444;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work .work-title {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+}
+
+.work .work-title p {
+  margin: 1em auto;
+  color: #666;
+  width: 30%;
+}
+
+.work .boxes {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 1024px) {
