@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6
 .container
     display: grid
     grid-template-columns: auto auto auto auto
-    grid-template-rows: 100vh 100vh 150vh 100vh
+    grid-template-rows: 100vh 50vh 150vh 100vh
 
 header
     grid-column-start: 1
@@ -132,13 +132,48 @@ nav
         text-align: center
         justify-self: center
         width: 100%
+        h1
+            font-size: 2rem
         p
             margin: 1em auto
             color: $light-grey
             width: 30%
     .boxes
-        margin-top: 5em
+        margin-top: 1em
         display: flex
+        justify-content: center
+        align-items: center
+        padding: 6em
+        .box
+            margin: 2em
+            display: flex
+            flex-direction: column
+            font-size: 1.25em
+            h3
+                text-align: center
+                margin: 1em
+            span
+                height: 5px
+                width: 50%
+                border: none
+                border-radius: 10px
+                background-color: #676E95
+                margin: 10px 0
+            &:nth-of-type(1)
+                h3
+                    text-align: left
+
+            &:nth-of-type(2)
+                span
+                    margin: 10px auto
+                h3
+                    text-align: center
+            &:nth-of-type(3)
+                span
+                    margin-left: auto
+                h3
+                    text-align: right
+            
 
 
 @media screen and ( max-width:  1024px)
