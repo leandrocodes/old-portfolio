@@ -174,14 +174,37 @@ nav
                     margin-left: auto
                 h3
                     text-align: right
-.habilities
+.skills
     color: $light
     grid-column-start: 1
     grid-column-end: 5
     grid-row-start: 3
     grid-row-end: 3
     display: flex
-    background-image: linear-gradient(to right bottom, #82aaff, #8f98e7, #9588ce, #9678b5, #926a9c)
+    flex-direction: column
+    background-image: linear-gradient(to right bottom, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95)
+    padding: 3em 2em
+    .skills-title
+        text-align: center
+        justify-self: center
+        width: 100%
+        h1
+            font-size: 2.25rem
+        p
+            margin: 1em auto
+            width: 30%
+    .cards
+        display: flex
+        justify-content: center
+        .card
+            width: 350px
+            height: 450px
+            background-color: white
+            margin: 30px
+            border-radius: 15px
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2)
+
+
 @media screen and ( max-width:  1024px)
     .nav-links
         width: 60%

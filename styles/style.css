@@ -270,7 +270,7 @@ nav {
   text-align: right;
 }
 
-.habilities {
+.skills {
   color: #FFF;
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -281,8 +281,48 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#82aaff), color-stop(#8f98e7), color-stop(#9588ce), color-stop(#9678b5), to(#926a9c));
-  background-image: linear-gradient(to right bottom, #82aaff, #8f98e7, #9588ce, #9678b5, #926a9c);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#6cb8fb), color-stop(#71a4e1), color-stop(#7191c8), color-stop(#6d7fae), to(#676e95));
+  background-image: linear-gradient(to right bottom, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95);
+  padding: 3em 2em;
+}
+
+.skills .skills-title {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 100%;
+}
+
+.skills .skills-title h1 {
+  font-size: 2.25rem;
+}
+
+.skills .skills-title p {
+  margin: 1em auto;
+  width: 30%;
+}
+
+.skills .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .cards .card {
+  width: 350px;
+  height: 450px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1024px) {
