@@ -19,7 +19,16 @@ body
 h1, h2, h3, h4, h5, h6
     font-family: $sans-primary
 
+.container
+    display: grid
+    grid-template-columns: auto auto auto auto
+    grid-template-rows: 100vh 100vh 150vh 100vh
+
 header
+    grid-column-start: 1
+    grid-column-end: 5
+    grid-row-start: 1
+    grid-row-end: 1
     margin-top: 0
     background-image: url('../img/header.svg')
     height: 100vh
@@ -53,11 +62,11 @@ nav
 .nav-links
     display: flex
     width: 40%
-    justify-content: space-around
+    justify-content: flex-end
     li
         list-style: none
-        margin-left: 25px
         padding: 5px
+        margin-left: 15px
         border-bottom: 2px solid transparent
         transition: all .3s ease
         &:hover
@@ -85,7 +94,7 @@ nav
     grid-column-end: 3
     grid-row-start: 2
     grid-row-end: 2
-    padding: 10% 25%
+    padding: 15% 22.5%
     display: grid
     grid-template-columns: auto auto
     grid-template-rows: 35% auto auto

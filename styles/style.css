@@ -15,7 +15,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", serif;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: 100vh 100vh 150vh 100vh;
+      grid-template-rows: 100vh 100vh 150vh 100vh;
+}
+
 header {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
   margin-top: 0;
   background-image: url("../img/header.svg");
   height: 100vh;
@@ -66,14 +81,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 40%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nav-links li {
   list-style: none;
-  margin-left: 25px;
   padding: 5px;
+  margin-left: 15px;
   border-bottom: 2px solid transparent;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
@@ -118,7 +134,7 @@ nav {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 2;
-  padding: 10% 25%;
+  padding: 15% 22.5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
