@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   -ms-grid-columns: auto auto auto auto;
       grid-template-columns: auto auto auto auto;
-  -ms-grid-rows: 100vh 100vh 100vh 150vh 100vh;
-      grid-template-rows: 100vh 100vh 100vh 150vh 100vh;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
 }
 
 header {
@@ -427,6 +427,110 @@ nav {
 }
 
 .projects .cards .card a {
+  background-color: #676E95;
+  color: #FFF;
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 250%;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+}
+
+.projects .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+}
+
+.projects .pages .page {
+  width: 500px;
+  height: 350px;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#6cb8fb), color-stop(#71a4e1), color-stop(#7191c8), color-stop(#6d7fae), to(#676e95));
+  background-image: linear-gradient(to top left, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95);
+  margin: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+}
+
+.projects .pages .page img {
+  margin: 2em auto;
+}
+
+.projects .pages .page a {
+  background-color: #676E95;
+  color: #FFF;
+  text-decoration: none;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 250%;
+  border-radius: 25px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2);
+}
+
+.projects .apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFF;
+}
+
+.projects .apps .app {
+  width: 350px;
+  height: 650px;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#6cb8fb), color-stop(#71a4e1), color-stop(#7191c8), color-stop(#6d7fae), to(#676e95));
+  background-image: linear-gradient(to top left, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95);
+  margin: 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+}
+
+.projects .apps .app img {
+  margin: 2em auto;
+}
+
+.projects .apps .app a {
   background-color: #676E95;
   color: #FFF;
   text-decoration: none;

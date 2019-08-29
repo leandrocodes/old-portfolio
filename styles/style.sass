@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6
 .container
     display: grid
     grid-template-columns: auto auto auto auto
-    grid-template-rows: 100vh 100vh 100vh 150vh 100vh
+    grid-template-rows: auto auto auto auto auto
 
 header
     grid-column-start: 1
@@ -265,7 +265,63 @@ nav
                 line-height: 250%
                 border-radius: 25px
                 box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2)
+    .pages
+        display: flex
+        justify-content: center
+        color: $light
+        .page
+            width: 500px
+            height: 350px
+            background-image: linear-gradient(to top left, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95)
+            margin: 30px
+            border-radius: 15px
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2)
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            padding: 1em
+            img
+                margin: 2em auto
+            a
+                background-color: $bluegrey
+                color: $light
+                text-decoration: none
+                width: 120px
+                height: 40px
+                text-align: center
+                line-height: 250%
+                border-radius: 25px
+                box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2)
 
+    .apps
+        display: flex
+        justify-content: center
+        color: $light
+        .app
+            width: 350px
+            height: 650px
+            background-image: linear-gradient(to top left, #6cb8fb, #71a4e1, #7191c8, #6d7fae, #676e95)
+            margin: 30px
+            border-radius: 15px
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2)
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            padding: 1em
+            img
+                margin: 2em auto
+            a
+                background-color: $bluegrey
+                color: $light
+                text-decoration: none
+                width: 120px
+                height: 40px
+                text-align: center
+                line-height: 250%
+                border-radius: 25px
+                box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 0.2)
 
 @media screen and ( max-width:  1024px)
     .nav-links
