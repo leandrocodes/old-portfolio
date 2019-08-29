@@ -307,6 +307,7 @@ nav {
 }
 
 .skills .cards {
+  color: #444;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,6 +324,28 @@ nav {
   border-radius: 15px;
   -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .cards .card img {
+  margin: 0 autopurpish;
+}
+
+.skills .cards .card h4 {
+  margin: .75em 0;
+  color: #7196CF;
 }
 
 @media screen and (max-width: 1024px) {

@@ -8,6 +8,7 @@ $light: #FFF
 $dark: #444
 $light-grey: #666
 $deepblue: #82AAFF
+$blueish: #7196CF
 
 *
     margin: 0
@@ -194,6 +195,7 @@ nav
             margin: 1em auto
             width: 30%
     .cards
+        color: $dark
         display: flex
         justify-content: center
         .card
@@ -203,6 +205,15 @@ nav
             margin: 30px
             border-radius: 15px
             box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2)
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            img
+                margin: 0 autopurpish
+            h4
+                margin: .75em 0
+                color: $blueish
 
 
 @media screen and ( max-width:  1024px)
