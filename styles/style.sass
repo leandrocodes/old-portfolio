@@ -363,7 +363,22 @@ nav
         text-align: left
         padding: 25% 5%
         p
-            margin-top: 15%    
+            margin-top: 15%
+
+@media screen and ( max-width:  320px)
+    .landing
+        h1
+            font-size: 2em
+            text-align: center
+        p
+            text-align: center
+    .media-links
+        grid-column-start: 1
+        grid-column-end: 5
+        margin: 1em auto
+        display: flex
+        justify-content: space-around   
+
 @keyframes navLinkFade
     from
         opacity: 0

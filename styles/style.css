@@ -609,6 +609,27 @@ nav {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .landing h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .landing p {
+    text-align: center;
+  }
+  .media-links {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 5;
+    margin: 1em auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
