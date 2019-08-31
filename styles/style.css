@@ -18,8 +18,8 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
   -ms-grid-rows: auto auto auto auto auto;
       grid-template-rows: auto auto auto auto auto;
 }
@@ -192,6 +192,8 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .work .work-title {
@@ -221,7 +223,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2em;
 }
 
 .work .boxes .box {
@@ -248,26 +249,6 @@ nav {
   border-radius: 10px;
   background-color: #676E95;
   margin: 10px 0;
-}
-
-.work .boxes .box:nth-of-type(1) h3 {
-  text-align: left;
-}
-
-.work .boxes .box:nth-of-type(2) span {
-  margin: 10px auto;
-}
-
-.work .boxes .box:nth-of-type(2) h3 {
-  text-align: center;
-}
-
-.work .boxes .box:nth-of-type(3) span {
-  margin-left: auto;
-}
-
-.work .boxes .box:nth-of-type(3) h3 {
-  text-align: right;
 }
 
 .skills {
@@ -595,6 +576,14 @@ nav {
   .burger {
     display: block;
     cursor: pointer;
+  }
+  .boxes {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .nav-active {
     -webkit-transform: translateX(0%);
