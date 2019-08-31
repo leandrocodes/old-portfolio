@@ -204,13 +204,12 @@ nav {
 }
 
 .work .work-title h1 {
-  font-size: 2.25rem02071902400832778;
+  font-size: 2.25rem;
 }
 
 .work .work-title p {
   margin: 1em auto;
   color: #666;
-  width: 30%;
 }
 
 .work .boxes {
@@ -606,6 +605,26 @@ nav {
   }
   .landing p {
     margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .work .work-title h1 {
+    font-size: 2rem;
+  }
+  .work .boxes {
+    padding: 2em;
+  }
+  .work .boxes .box {
+    margin: 1em 0;
+    font-size: 1em;
+    text-align: justify;
+  }
+  .work .boxes .box img {
+    height: 150px;
+  }
+  .work .boxes .box h1 {
+    text-align: center;
   }
 }
 
