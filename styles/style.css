@@ -585,6 +585,13 @@ nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .pages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .media-links {
+    margin-top: .5em;
+  }
   .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
