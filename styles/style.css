@@ -210,6 +210,7 @@ nav {
 .work .work-title p {
   margin: 1em auto;
   color: #666;
+  width: 30%;
 }
 
 .work .boxes {
@@ -611,6 +612,9 @@ nav {
 @media screen and (max-width: 375px) {
   .work .work-title h1 {
     font-size: 2rem;
+  }
+  .work .work-title p {
+    width: 75%;
   }
   .work .boxes {
     padding: 2em;
