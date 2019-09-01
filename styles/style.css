@@ -595,6 +595,11 @@ nav {
   .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+    z-index: 10;
+  }
+  .blur-effect {
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
   }
 }
 

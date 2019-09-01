@@ -5,6 +5,8 @@ const navSlide = () => {
     //toggle
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active')
+        document.querySelector('.landing').classList.toggle('blur-effect')
+        document.querySelector('.logo').classList.toggle('blur-effect')
         //anim
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
