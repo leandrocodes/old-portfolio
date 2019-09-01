@@ -573,6 +573,12 @@ nav {
     opacity: 0;
     margin: 1em;
   }
+  .work .work-title h1 {
+    font-size: 2rem;
+  }
+  .work .work-title p {
+    width: 75%;
+  }
   .burger {
     display: block;
     cursor: pointer;
@@ -615,29 +621,37 @@ nav {
 }
 
 @media screen and (max-width: 375px) {
-  .work .work-title h1 {
-    font-size: 2rem;
+  .boxes {
+    padding: 1.25em;
   }
-  .work .work-title p {
-    width: 75%;
-  }
-  .work .boxes {
-    padding: 2em;
-  }
-  .work .boxes .box {
+  .boxes .box {
     margin: 1em 0;
     font-size: 1em;
     text-align: justify;
   }
-  .work .boxes .box img {
+  .boxes .box img {
     height: 150px;
   }
-  .work .boxes .box h1 {
+  .boxes .box h1 {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .boxes {
+    padding: .5em;
+  }
+  .boxes .box {
+    margin: .5em 0;
+    font-size: .2em;
+    text-align: justify;
+  }
+  .boxes .box img {
+    height: 135px;
+  }
+  .boxes .box h1 {
+    text-align: center;
+  }
   .landing h1 {
     font-size: 2em;
     text-align: center;
