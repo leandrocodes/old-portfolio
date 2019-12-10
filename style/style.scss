@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Jura");
+//fonts
+$family-sans-serif: "Jura", sans-serif;
+$family-sans-serif2: "Nunito", sans-serif;
+//colors
+$han-blue: #4864d6;
+$gun-metal: #2d3142;
+$dark-gun-metal: #1d202a;
+$teal-blue: #c7ede6;
+$success: #8c6c9e;
+//set fonts
+$family-primary: $family-sans-serif;
+$family-secondary: $family-sans-serif2;
+//set colors
+$primary: $han-blue;
+$secondary: $teal-blue;
+$dark: $gun-metal;
+$darker: $dark-gun-metal;
+
+.navbar {
+  padding: 1.5rem 3rem;
+  box-shadow: none;
+  z-index: auto;
+}
+
+.navbar .navbar-menu a.button.is-primary.is-outlined {
+  border-width: 0.1em;
+  padding: 1.2rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 65px;
+  margin-left: 4em;
+}
+
+.button {
+  font-family: $family-secondary;
+}
+
+.subtitle {
+  font-family: $family-secondary;
+}
+.text {
+  font-family: $family-secondary;
+}
+.avatar {
+  width: 200px;
+  margin: 2rem 0;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero {
+  background: url(../img/curve.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 420px) {
+  .hero {
+    background: url(../img/curve-mobile.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    background: url(../img/curve-tablet.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+.section {
+  padding: 10rem 3rem;
+}
+
+.section.is-secondary {
+  background-color: $secondary;
+}
+
+@media only screen and (max-width: 1085px) {
+  .section.is-secondary {
+    padding-bottom: 12rem;
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .section.is-secondary {
+    padding-bottom: 12rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section.is-secondary {
+    padding-bottom: 13rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .section.is-secondary {
+    padding-bottom: 8rem;
+  }
+}
+
+.section.skills {
+  margin-top: -8rem;
+  margin-bottom: 0.5rem;
+}
+
+.section.skills .box {
+  padding: 0;
+  border-radius: 1em;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+}
+
+.section.skills .box .content .columns .column p.list-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center !important;
+}
+
+.section.skills .box .content .columns .column:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+@media screen and (min-width: 769px) {
+  .section.skills .box .content .columns .column {
+    border-bottom: 0px solid #e6ecf8;
+    border-right: 1px solid #e6ecf8;
+    padding: 60px 35px;
+  }
+}
+
+li {
+  list-style-type: none;
+  font-family: $family-sans-serif2;
+  margin-left: 0 !important;
+  margin-top: 0;
+}
+
+.project-grid {
+  padding: 2rem 1rem;
+}
+
+.card {
+  border-radius: 0.3em;
+  box-shadow: 0.1em 0.1em 0.5em -0.3em rgba(36, 41, 46, 1) !important;
+}
+
+.card-image .image img {
+  margin: 0 auto;
+  width: auto;
+}
+
+.project-grid.columns .column {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.footer {
+  height: 50vh;
+  background: url(../img/footer.svg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.footer .logo img {
+  margin: 0 auto;
+}
+
+.footer > .content > .title {
+  margin-top: 0;
+}
+
+@media screen and(width: 420){
+  .btn .whatsapp{
+    margin-top: 200px!important;
+  }
+}
+
+
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.instagram:before {
+  background-color: #c13584;
+}
+.social-btns .btn.instagram .fa {
+  color: #c13584;
+}
+.social-btns .btn.github:before {
+  background-color: #24292e;
+}
+.social-btns .btn.github .fa {
+  color: #24292e;
+}
+
+.social-btns .btn.whatsapp:before {
+  background-color: #01bfa5;
+}
+.social-btns .btn.whatsapp .fa {
+  color: #01bfa5;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.social-btns {
+  height: 90px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+
+#scrollup {
+  width: 48px;
+  height: 48px;
+  background: url(https://img.icons8.com/dusk/48/000000/one-finger.png) 0 0 no-repeat;
+  text-indent: -9999px;
+  display: none;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+}
+
+@import "../node_modules/bulma/bulma.sass";
